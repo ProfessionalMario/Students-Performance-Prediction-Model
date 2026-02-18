@@ -19,7 +19,8 @@ setup(
     version='0.0.1',
     Author= 'Manikandan',
     Auther_mail= 'mani1756067@gmail.com',
-    packages= find_packages(),
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires= get_requirements('requirements.txt')
     )
 
